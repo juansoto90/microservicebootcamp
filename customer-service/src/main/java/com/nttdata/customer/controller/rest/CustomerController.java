@@ -19,8 +19,8 @@ public class CustomerController {
     }
 
     @GetMapping("/number/{number}")
-    public Mono<Customer> findByCustomerIdNumber(@PathVariable String customerIdName){
-        return iCustomerService.findByCustomerIdNumber(customerIdName);
+    public Mono<Customer> findByCustomerIdNumber(@PathVariable String number){
+        return iCustomerService.findByCustomerIdNumber(number);
     }
 
     @PostMapping

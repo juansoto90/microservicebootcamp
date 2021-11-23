@@ -8,5 +8,5 @@ import reactor.core.publisher.Mono;
 @Repository
 public interface ICustomerRepository extends ReactiveCrudRepository<Customer, String> {
     Mono<Customer> findByName(String name);
-    Mono<Customer> findByCustomerIdNumber(String customerIdName);
+    Mono<Customer> findByCustomerIdNumber(String customerIdNumber);
 }

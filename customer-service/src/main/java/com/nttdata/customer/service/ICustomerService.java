@@ -5,6 +5,6 @@ import reactor.core.publisher.Mono;
 
 public interface ICustomerService {
     Mono<Customer> findByName(String name);
-    Mono<Customer> findByCustomerIdNumber(String customerIdName);
+    Mono<Customer> findByCustomerIdNumber(String customerIdNumber);
     Mono<Customer> save(Customer customer);
 }
