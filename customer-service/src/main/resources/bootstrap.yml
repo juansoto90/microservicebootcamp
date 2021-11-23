@@ -3,6 +3,5 @@ spring:
     name: customer-service
   cloud:
     config:
+      enabled: true
       uri: http://localhost:8099
-      username: root
-      password: 4dm1n
