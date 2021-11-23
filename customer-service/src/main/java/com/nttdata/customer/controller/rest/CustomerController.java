@@ -1,6 +1,6 @@
 package com.nttdata.customer.controller.rest;
 
-import com.nttdata.customer.repository.entity.Customer;
+import com.nttdata.customer.entity.Customer;
 import com.nttdata.customer.service.ICustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

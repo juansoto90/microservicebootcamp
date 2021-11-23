@@ -1,6 +1,6 @@
 package com.nttdata.customer.repository;
 
-import com.nttdata.customer.repository.entity.Customer;
+import com.nttdata.customer.entity.Customer;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Mono;

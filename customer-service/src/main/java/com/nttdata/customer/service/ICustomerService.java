@@ -1,6 +1,6 @@
 package com.nttdata.customer.service;
 
-import com.nttdata.customer.repository.entity.Customer;
+import com.nttdata.customer.entity.Customer;
 import reactor.core.publisher.Mono;
 
 public interface ICustomerService {
