@@ -6,15 +6,15 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("product")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Document("document")
 public class Product {
+
     @Id
     private String id;
     private String productName;
-
-    private ProductType productType;
+    private String productType;
     private ProductRule productRule;
 }
