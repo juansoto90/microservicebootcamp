@@ -1,10 +1,10 @@
-package com.nttdata.msproducto;
+package com.nttdata.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsproductoApplicationTests {
+class GatewayServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
