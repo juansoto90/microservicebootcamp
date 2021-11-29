@@ -7,8 +7,6 @@ import com.nttdata.acquisition.service.IAcquisitionService;
 import com.nttdata.acquisition.service.ICustomerService;
 import com.nttdata.acquisition.util.AccountRule;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
@@ -19,8 +17,6 @@ public class AcquisitionController {
 
     private final IAcquisitionService iAcquisitionService;
     private final ICustomerService iCustomerService;
-
-    private static final Logger Log = LoggerFactory.getLogger(AcquisitionController.class);
 
     @PostMapping
     public Mono<Acquisition> create(@RequestBody Acquisition acquisition){

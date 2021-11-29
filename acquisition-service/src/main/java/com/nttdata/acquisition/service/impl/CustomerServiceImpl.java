@@ -23,8 +23,7 @@ public class CustomerServiceImpl implements ICustomerService {
 
     @Override
     public Mono<Customer> findById(String id) {
-        Mono<Customer> c = webClientBuilder.build().get().uri(URI + "/{id}", id)
+        return webClientBuilder.build().get().uri(URI + "/{id}", id)
                 .retrieve().bodyToMono(Customer.class);
-        return c;
     }
 }
