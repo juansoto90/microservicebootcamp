@@ -8,4 +8,4 @@ eureka:
 
 customer:
   web:
-    url: http://customer-service/customer
+    url: http://localhost:8080/customer
