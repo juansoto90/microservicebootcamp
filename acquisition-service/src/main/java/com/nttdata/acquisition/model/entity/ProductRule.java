@@ -1,4 +1,4 @@
-package com.nttdata.product.entity;
+package com.nttdata.acquisition.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

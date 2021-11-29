@@ -13,6 +13,11 @@ public class CustomerController {
 
     private final ICustomerService iCustomerService;
 
+    @GetMapping("/{id}")
+    public Mono<Customer> findById(@PathVariable String id){
+        return iCustomerService.findById(id);
+    }
+
     @GetMapping("/name/{name}")
     public Mono<Customer> findByName(@PathVariable String name){
         return iCustomerService.findByName(name);

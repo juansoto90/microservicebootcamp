@@ -5,3 +5,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8082/eureka/
+
+customer:
+  web:
+    url: http://customer-service/customer
