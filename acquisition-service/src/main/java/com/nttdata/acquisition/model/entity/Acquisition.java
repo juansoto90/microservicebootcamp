@@ -19,8 +19,9 @@ import java.util.List;
 public class Acquisition {
     @Id
     private String id;
+    private String idCustomer;
+    private Customer Customer;
     private String productType;
-    private Customer customer;
     private List<Customer> customerOwner;
     private List<Customer> customerAuthorizedSigner;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
